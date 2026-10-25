@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a6daf618ab024d46815d16dbbf3f7c76" Name="Diagram1">
+        <EntityTypeShape EntityType="BeveragePlantDBModel.AuthorizationUsers" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_CustomerOrderItems" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_CustomerOrders" Width="1.5" PointX="5.25" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_Customers" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_Departments" Width="1.5" PointX="3.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_Employees" Width="1.5" PointX="6" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_MaterialReceiptItems" Width="1.5" PointX="10.5" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_MaterialReceipts" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_Materials" Width="1.5" PointX="8.25" PointY="15.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_ProductionBatches" Width="1.5" PointX="13.5" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_ProductionOrders" Width="1.5" PointX="11.25" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_ProductMaterials" Width="1.5" PointX="10.5" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_Products" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_SupplierMaterials" Width="1.5" PointX="5.25" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.ID_Suppliers" Width="1.5" PointX="3" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BeveragePlantDBModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_Customers_AuthorizationUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_Employees_AuthorizationUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_Suppliers_AuthorizationUsers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_CustomerOrderItems_ID_CustomerOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_CustomerOrderItems_ID_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_CustomerOrders_ID_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_CustomerOrders_ID_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_Employees_ID_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_ProductionOrders_ID_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_MaterialReceipts_ID_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_ProductionOrders_ID_Employees" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_MaterialReceiptItems_ID_MaterialReceipts" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_MaterialReceiptItems_ID_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_MaterialReceipts_ID_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_ProductMaterials_ID_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_SupplierMaterials_ID_Materials" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_ProductionBatches_ID_ProductionOrders" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_ProductionOrders_ID_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_ProductMaterials_ID_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="BeveragePlantDBModel.FK_ID_SupplierMaterials_ID_Suppliers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

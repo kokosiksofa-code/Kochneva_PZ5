@@ -1,0 +1,15 @@
+C:\Users\Admin\source\repos\Naptki\Naptki\obj\Debug\Naptki.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Naptki\Naptki\obj\Debug\Naptki.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\Naptki.exe.config
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\Naptki.exe
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\Naptki.pdb
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\EntityFramework.dll
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\PasswordSecurity.dll
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\PasswordSecurity.pdb
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\PasswordSecurity.dll.config
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\EntityFramework.xml
+C:\Users\Admin\source\repos\Naptki\Naptki\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\source\repos\Naptki\Naptki\obj\Debug\Naptki.csproj.Up2Date
+C:\Users\Admin\source\repos\Naptki\Naptki\obj\Debug\Naptki.exe
+C:\Users\Admin\source\repos\Naptki\Naptki\obj\Debug\Naptki.pdb

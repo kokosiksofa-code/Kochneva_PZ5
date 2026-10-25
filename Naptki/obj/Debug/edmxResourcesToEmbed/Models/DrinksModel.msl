@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище BeveragePlantDBModelContainer" CdmEntityContainer="BeveragePlantDBEntities">
+    <EntitySetMapping Name="AuthorizationUsers">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.AuthorizationUsers">
+        <MappingFragment StoreEntitySet="AuthorizationUsers">
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedAt" ColumnName="CreatedAt" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_CustomerOrderItems">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_CustomerOrderItems">
+        <MappingFragment StoreEntitySet="ID_CustomerOrderItems">
+          <ScalarProperty Name="ID_CustomerOrderItem" ColumnName="ID_CustomerOrderItem" />
+          <ScalarProperty Name="ID_CustomerOrder" ColumnName="ID_CustomerOrder" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricePerUnit" ColumnName="PricePerUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_CustomerOrders">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_CustomerOrders">
+        <MappingFragment StoreEntitySet="ID_CustomerOrders">
+          <ScalarProperty Name="ID_CustomerOrder" ColumnName="ID_CustomerOrder" />
+          <ScalarProperty Name="ID_Customer" ColumnName="ID_Customer" />
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="PlannedDeliveryDate" ColumnName="PlannedDeliveryDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_Customers">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_Customers">
+        <MappingFragment StoreEntitySet="ID_Customers">
+          <ScalarProperty Name="ID_Customer" ColumnName="ID_Customer" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_Departments">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_Departments">
+        <MappingFragment StoreEntitySet="ID_Departments">
+          <ScalarProperty Name="ID_Department" ColumnName="ID_Department" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Location" ColumnName="Location" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_Employees">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_Employees">
+        <MappingFragment StoreEntitySet="ID_Employees">
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="ID_Department" ColumnName="ID_Department" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="HireDate" ColumnName="HireDate" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_MaterialReceiptItems">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_MaterialReceiptItems">
+        <MappingFragment StoreEntitySet="ID_MaterialReceiptItems">
+          <ScalarProperty Name="ID_MaterialReceiptItem" ColumnName="ID_MaterialReceiptItem" />
+          <ScalarProperty Name="ID_MaterialReceipt" ColumnName="ID_MaterialReceipt" />
+          <ScalarProperty Name="ID_Material" ColumnName="ID_Material" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="PricePerUnit" ColumnName="PricePerUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_MaterialReceipts">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_MaterialReceipts">
+        <MappingFragment StoreEntitySet="ID_MaterialReceipts">
+          <ScalarProperty Name="ID_MaterialReceipt" ColumnName="ID_MaterialReceipt" />
+          <ScalarProperty Name="ID_Supplier" ColumnName="ID_Supplier" />
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="ReceiptDate" ColumnName="ReceiptDate" />
+          <ScalarProperty Name="DocumentNumber" ColumnName="DocumentNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_Materials">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_Materials">
+        <MappingFragment StoreEntitySet="ID_Materials">
+          <ScalarProperty Name="ID_Material" ColumnName="ID_Material" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="CriticalStock" ColumnName="CriticalStock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_ProductionBatches">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_ProductionBatches">
+        <MappingFragment StoreEntitySet="ID_ProductionBatches">
+          <ScalarProperty Name="ID_ProductionBatch" ColumnName="ID_ProductionBatch" />
+          <ScalarProperty Name="ID_ProductionOrder" ColumnName="ID_ProductionOrder" />
+          <ScalarProperty Name="ActualQuantity" ColumnName="ActualQuantity" />
+          <ScalarProperty Name="DefectQuantity" ColumnName="DefectQuantity" />
+          <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="BatchNumber" ColumnName="BatchNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_ProductionOrders">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_ProductionOrders">
+        <MappingFragment StoreEntitySet="ID_ProductionOrders">
+          <ScalarProperty Name="ID_ProductionOrder" ColumnName="ID_ProductionOrder" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="ID_Department" ColumnName="ID_Department" />
+          <ScalarProperty Name="ID_Employee" ColumnName="ID_Employee" />
+          <ScalarProperty Name="PlannedQuantity" ColumnName="PlannedQuantity" />
+          <ScalarProperty Name="PlannedStartDate" ColumnName="PlannedStartDate" />
+          <ScalarProperty Name="PlannedEndDate" ColumnName="PlannedEndDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_ProductMaterials">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_ProductMaterials">
+        <MappingFragment StoreEntitySet="ID_ProductMaterials">
+          <ScalarProperty Name="ID_ProductMaterial" ColumnName="ID_ProductMaterial" />
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="ID_Material" ColumnName="ID_Material" />
+          <ScalarProperty Name="QuantityPerUnit" ColumnName="QuantityPerUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_Products">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_Products">
+        <MappingFragment StoreEntitySet="ID_Products">
+          <ScalarProperty Name="ID_Product" ColumnName="ID_Product" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Unit" ColumnName="Unit" />
+          <ScalarProperty Name="ShelfLifeDays" ColumnName="ShelfLifeDays" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_SupplierMaterials">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_SupplierMaterials">
+        <MappingFragment StoreEntitySet="ID_SupplierMaterials">
+          <ScalarProperty Name="ID_SupplierMaterial" ColumnName="ID_SupplierMaterial" />
+          <ScalarProperty Name="ID_Supplier" ColumnName="ID_Supplier" />
+          <ScalarProperty Name="ID_Material" ColumnName="ID_Material" />
+          <ScalarProperty Name="PricePerUnit" ColumnName="PricePerUnit" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ID_Suppliers">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.ID_Suppliers">
+        <MappingFragment StoreEntitySet="ID_Suppliers">
+          <ScalarProperty Name="ID_Supplier" ColumnName="ID_Supplier" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ID_User" ColumnName="ID_User" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="BeveragePlantDBModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
